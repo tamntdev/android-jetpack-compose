@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.animation.core.animateFloatAsState
-import androidx.compose.foundation.DefaultMarqueeVelocity
+//import androidx.compose.foundation.DefaultMarqueeVelocity
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -112,7 +112,8 @@ class MainActivity : ComponentActivity() {
                     Column(
                         horizontalAlignment = Alignment.CenterHorizontally,
                         verticalArrangement = Arrangement.Center,
-                        modifier = Modifier.padding(20.dp)
+                        modifier = Modifier
+//                            .padding(20.dp)
                             .fillMaxSize()
                     ) {
 //                        Greeting("Android Jetpack Compose!")
@@ -124,7 +125,26 @@ class MainActivity : ComponentActivity() {
 //                        ResourcesInJetpackCompose()
 //                        ScaffoldSample()
 //                        SmallTopAppBarSample()
-                        CenterAlignTopAppBarSample()
+//                        CenterAlignTopAppBarSample()
+//                        LargeTopAppBarSample()
+//                        NavigationDrawerSample()
+//                        FloatActionButtonSample()
+//                        CardSample()
+//                        DialogSample()
+//                        RadioButtonAndCheckBoxSample()
+//                        MyScreen()
+//                        DropdownMenuWithDetails()
+//                        SwitchMinimalExample()
+//                        SwitchWithIconExample()
+//                        PlainTooltipExample()
+//                        RichTooltipExample()
+//                        AdvancedRichTooltipExample()
+//                        PullToRefreshBasicSampleView()
+//                        ScaffoldWithSimpleSnackbar()
+//                        ScaffoldWithCustomSnackbar()
+//                        BadgeInteractiveExample()
+//                        PartialBottomSheet()
+                        HorizontalMultiBrowseCarouselSample()
                     }
                 }
             }
@@ -349,26 +369,26 @@ fun MultiStyleText() {
 }
 
 // Sử dụng hiệu ứng marquee cho text
-@Composable
-@OptIn(ExperimentalFoundationApi::class)
-fun BasicMarqueeSample(stringId: Int?) {
-    Column(
-        modifier = Modifier.fillMaxSize(),
-        verticalArrangement = Arrangement.Center
-    ) {
-        Text(
-            text = stringId?.let { stringResource(id = it) } ?: "Hello Android Jetpack Compose!",
-            modifier = Modifier
-                .padding(24.dp)
-                .basicMarquee(
-                    velocity = DefaultMarqueeVelocity.times(3),
-                    iterations = Int.MAX_VALUE
-                ),
-            fontSize = 36.sp,
-            color = Color(0xFF01579B)
-        )
-    }
-}
+//@Composable
+//@OptIn(ExperimentalFoundationApi::class)
+//fun BasicMarqueeSample(stringId: Int?) {
+//    Column(
+//        modifier = Modifier.fillMaxSize(),
+//        verticalArrangement = Arrangement.Center
+//    ) {
+//        Text(
+//            text = stringId?.let { stringResource(id = it) } ?: "Hello Android Jetpack Compose!",
+//            modifier = Modifier
+//                .padding(24.dp)
+//                .basicMarquee(
+//                    velocity = DefaultMarqueeVelocity.times(3),
+//                    iterations = Int.MAX_VALUE
+//                ),
+//            fontSize = 36.sp,
+//            color = Color(0xFF01579B)
+//        )
+//    }
+//}
 
 @Composable
 fun ExampleRow(modifier: Modifier) {
